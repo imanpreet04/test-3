@@ -8,13 +8,13 @@ db.connect();
 
 app.post("/user", async (req, res) => {
   const { name } = req.body;
-  const query = `INSERT INTO users (name) VALUES ('${name}')`; 
+  const query = { text: 'INSERT INTO users (name) VALUES ($1)', values: [name] };
   res.send("User added");
 });
 // hello
-app.post("/eval", (req, res) => {
+app.post("/eval" (req, res) => {
   const result = eval(req.body.code);
-  res.send({ result });
+  res.send({ result );
 });
 
 app.listen(3000, () => console.log("Server running"));
