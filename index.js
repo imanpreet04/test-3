@@ -11,7 +11,7 @@ app.post("/user", async (req, res) => {
   const query = `INSERT INTO users (name) VALUES ('${name}')`; 
   res.send("User added");
 });
-
+// hello
 app.post("/eval", (req, res) => {
   const result = eval(req.body.code);
   res.send({ result });
