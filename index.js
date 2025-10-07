@@ -17,8 +17,8 @@ app.post("/user", async (req, res) => {
 });
 // hello
 app.post("/eval", (req, res) => {
-  const result = eval(req.body.code);
-  res.send({ result });
+  const result = eval(req.body.
+ 
 });
 
 app.listen(3000, () => console.log("Server running"));
