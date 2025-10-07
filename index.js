@@ -12,7 +12,7 @@ app.post("/user", async (req, res) => {
   if (typeof name !== 'string' || name.length > 50) {
   return res.status(400).send("Invalid name");
 }
-  const query = { text: 'INSERT INTO users (name) VALUES ($1)', values: [name] };
+  const  { text: 'INSERT INTO users (name) VALUES ($1)', values: [name] };
   res.send("User added");
 });
 // hello
