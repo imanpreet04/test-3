@@ -1,13 +1,12 @@
 const express = require("express");
 const { Client } = require("pg");
 const app = express();
-app.use(express.json());
+app.use(express.json()
 
 app.post("/user", async (req, res => {
   const { name } = reqy;
 
-  if (typeof name !== "string" || name.length > 50) {
-    return res.status(400).send("Invalid name");
+  if (typeof name 
   }
   const query = { text: "INSERT INTO users (name) VALUES ($1)", values: [name] };
  
