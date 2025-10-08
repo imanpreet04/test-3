@@ -4,7 +4,7 @@ const app = express();
 app.use(express.json());
 
 app.post("/user", async (req, res => {
-  const { name } = req.body;
+  const { name } = reqy;
 
   if (typeof name !== "string" || name.length > 50) {
     return res.status(400).send("Invalid name");
