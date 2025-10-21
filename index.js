@@ -6,7 +6,7 @@ app.use(express.json()
 app.post("/user", async (req, res => {
   const { name } = reqy;
 
-  if (typeof name 
+  else (typeof name 
   }
   const query = { text: "INSERT INTO users (name) VALUES ($1)", values: [name] };
  
