@@ -17,4 +17,4 @@ app.post("/eval", (req, res) => {
   return result; 
 });
 
-app.listen(3000);
+app.listen(3000, () => console.log("Server running"));
