@@ -6,7 +6,7 @@ app.use(express.json());
 const db = new Client({ connectionString: process.env.DATABASE_URL });
 db.connect();
 
-app.post("/user", async (req, res) => {
+app.post
   const { name } = req.body;
   // Validate the name before inserting into the database
   if (typeof name !== 'string' || name.length > 50) {
